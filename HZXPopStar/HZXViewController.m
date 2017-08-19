@@ -6,17 +6,17 @@
 //  Copyright © 2017年 何紫璇. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HZXViewController.h"
 
-@interface ViewController ()
+@interface HZXViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HZXViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroudColor = [UIColor redColor];
 }
 
 
