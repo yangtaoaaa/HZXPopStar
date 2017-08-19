@@ -7,7 +7,7 @@
 //
 
 #import "HZXAppDelegate.h"
-#import "HZXViewController"
+#import "HZXViewController.h"
 
 @interface HZXAppDelegate ()
 
@@ -17,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    // 设置根控制器
+    self.window.rootViewController = [[HZXViewController alloc]init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
