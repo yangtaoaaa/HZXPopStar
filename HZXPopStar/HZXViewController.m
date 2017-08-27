@@ -17,8 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    NSLog(@"kkkk");
-    NSLog(@"3.50");
+    NSLog(@"3.54");
+    UIView *view = [[UIView alloc]init];
+    view.height = 100;
+    view.width = 100;
+    view.x = 0;
+    view.y = 0;
+    view.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:view];
 }
 
 
